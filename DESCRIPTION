@@ -1,0 +1,11 @@
+Package: R2LaTeX
+Title: Export an R datafile to a LaTeX / TeX table
+Version: 0.0.0.9000
+Authors@R: person("Tom", "Kelly", email = "tom.kelly@postgrad.otago.ac.nz", role = c("aut", "cre"))
+Description: Export one or many R datafile(s) to LaTeX / TeX table(s) using
+    xtable, automatically format as string or numerical (with significant figures).
+Depends:
+    xtable
+License: GPL-3
+LazyData: true
+RoxygenNote: 5.0.1.9000
