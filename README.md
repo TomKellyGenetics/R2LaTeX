@@ -1,3 +1,5 @@
+[![Travis-CI Build Status](https://travis-ci.org/TomKellyGenetics/R2LaTeX.svg?branch=master)](https://travis-ci.org/TomKellyGenetics/R2LaTeX)
+
 R2LaTeX: R package to export LaTeX tables
 ===================
 
