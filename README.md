@@ -1,4 +1,5 @@
 [![Travis-CI Build Status](https://travis-ci.org/TomKellyGenetics/R2LaTeX.svg?branch=master)](https://travis-ci.org/TomKellyGenetics/R2LaTeX)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/TomKellyGenetics/R2LaTeX?branch=master&svg=true)](https://ci.appveyor.com/project/TomKellyGenetics/R2LaTeX)
 
 R2LaTeX: R package to export LaTeX tables
 ===================
