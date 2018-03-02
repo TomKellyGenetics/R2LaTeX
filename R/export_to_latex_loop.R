@@ -10,8 +10,8 @@
 #' colnames(data) <- letters[1:10]
 #' 
 #' table <- matrix(rnorm(1200), 60, 20)
-#' rownames(data) <- 1:50
-#' colnames(data) <- letters[1:20]
+#' rownames(table) <- 1:60
+#' colnames(table) <- letters[1:20]
 #'
 #' objects <- c("data", "table")
 #'
