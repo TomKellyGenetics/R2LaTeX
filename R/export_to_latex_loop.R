@@ -19,7 +19,7 @@
 #'
 export_to_latex_loop <-
 function(object_list){
-  for(command in paste0('export_SL_latex(', object_list, ")")){
+  for(command in paste0('export_to_latex(', object_list, ")")){
     eval(parse(text=command))
     print(command)
   }
