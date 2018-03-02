@@ -2,3 +2,4 @@
 
 export(export_to_latex)
 export(export_to_latex_loop)
+import(xtable)

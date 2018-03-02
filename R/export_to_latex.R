@@ -3,6 +3,7 @@
 #' Exports the R data object into a tex file with the same name as in the R working environment (into the current working directory). Automatically detects integers, strings, and numerics automatically formatting accordingly as string or numerical (with significant figures). Allows formatting of spaces in rownames.
 #' @param x Data matrix or Data Frame to be exported into a tex table.
 #' @keywords dataframe, matrix, LaTeX, tex, table
+#' @import xtable
 #' @export
 #' @examples
 #' export_to_latex()

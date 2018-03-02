@@ -35,4 +35,3 @@ export_to_latex(example)
 \keyword{matrix,}
 \keyword{table}
 \keyword{tex,}
-
