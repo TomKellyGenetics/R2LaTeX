@@ -5,7 +5,17 @@
 #' @keywords dataframe, matrix, LaTeX, tex, table
 #' @export
 #' @examples
-#' export_to_latex_loop()
+#' data <- rnorm(500, 50, 10)
+#' rownames(data) <- 1:50
+#' colnames(data) <- letters[1:10]
+#' 
+#' table <- rnorm(500, 60, 20)
+#' rownames(data) <- 1:50
+#' colnames(data) <- letters[1:20]
+#'
+#' objects <- c("data", "table")
+#'
+#' export_to_latex_loop(objects)
 #'
 export_to_latex_loop <-
 function(object_list){
