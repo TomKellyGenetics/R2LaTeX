@@ -1,4 +1,5 @@
 ^\.travis\.yml$
 ^appveyor\.yml$
 data/example.tex
-*Proj
+data/example.RData 
+R2LaTeX.Rproj 

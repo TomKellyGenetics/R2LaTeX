@@ -5,11 +5,11 @@
 #' @keywords dataframe, matrix, LaTeX, tex, table
 #' @export
 #' @examples
-#' data <- rnorm(500, 50, 10)
+#' data <- matrix(rnorm(500), 50, 10)
 #' rownames(data) <- 1:50
 #' colnames(data) <- letters[1:10]
 #' 
-#' table <- rnorm(500, 60, 20)
+#' table <- matrix(rnorm(1200), 60, 20)
 #' rownames(data) <- 1:50
 #' colnames(data) <- letters[1:20]
 #'

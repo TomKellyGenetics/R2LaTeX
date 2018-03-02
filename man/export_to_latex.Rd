@@ -9,26 +9,34 @@ export_to_latex(x)
 \arguments{
 \item{x}{Data matrix or Data Frame to be exported into a tex table.}
 }
-\description{
-Exports the R data object into a tex file with the same name as in the R working environment (into the current working directory). Automatically detects integers, strings, and numerics automatically formatting accordingly as string or numerical (with significant figures). Allows formatting of spaces in rownames.
-}
-\examples{
-export_to_latex()
-export_to_latex(example)
-\% latex table generated in R 3.2.4 by xtable 1.8-2 package
-\% Tue Apr  5 16:40:56 2016
+\value{
+% latex table generated in R 3.2.4 by xtable 1.8-2 package
+% Tue Apr  5 16:40:56 2016
 \\begin{table}[ht]
 \\centering
 \\begin{tabular}{rrll}
 \\hline
-& c.1..2..3. & c..hello....hey....hi.. & c.T..F..T. \\\\
+& c.1..2..3. & c..A....B....C.. & c.T..F..T. \\\\
 \\hline
-1 &   1 & hello & TRUE \\\\
-2 &   2 & hey & FALSE \\\\
-3 &   3 & hi & TRUE \\\\
+1 &   1 & A & TRUE \\\\
+2 &   2 & B & FALSE \\\\
+3 &   3 & C & TRUE \\\\
 \\hline
 \\end{tabular}
 \\end{table}
+}
+\description{
+Exports the R data object into a tex file with the same name as in the R working environment (into the current working directory). Automatically detects integers, strings, and numerics automatically formatting accordingly as string or numerical (with significant figures). Allows formatting of spaces in rownames.
+}
+\examples{
+data <- matrix(rnorm(500), 50, 10)
+rownames(data) <- 1:50
+colnames(data) <- letters[1:10]
+
+export_to_latex(data)
+
+example <- cbind(c(1,2,3), c("A", "B", "C"), c(TRUE, FALSE, TRUE))
+export_to_latex(example)
 }
 \keyword{LaTeX,}
 \keyword{dataframe,}

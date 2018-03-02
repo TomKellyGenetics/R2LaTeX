@@ -6,29 +6,29 @@
 #' @import xtable
 #' @export
 #' @examples
-#' data <- rnorm(500, 50, 10)
+#' data <- matrix(rnorm(500), 50, 10)
 #' rownames(data) <- 1:50
 #' colnames(data) <- letters[1:10]
 #'
 #' export_to_latex(data)
 #'
-#' example <- cbind(c(1,2,3), c("A", "B", "C"), c(TRUE, FALSE, TRUE)))
+#' example <- cbind(c(1,2,3), c("A", "B", "C"), c(TRUE, FALSE, TRUE))
 #' export_to_latex(example)
 #' @return
 #' % latex table generated in R 3.2.4 by xtable 1.8-2 package
 #' % Tue Apr  5 16:40:56 2016
-#' \begin{table}[ht]
-#' \centering
-#' \begin{tabular}{rrll}
-#' \hline
-#' & c.1..2..3. & c..A....B....C.. & c.T..F..T. \\
-#' \hline
-#' 1 &   1 & A & TRUE \\
-#' 2 &   2 & B & FALSE \\
-#' 3 &   3 & C & TRUE \\
-#' \hline
-#' \end{tabular}
-#' \end{table}
+#' \\begin{table}[ht]
+#' \\centering
+#' \\begin{tabular}{rrll}
+#' \\hline
+#' & c.1..2..3. & c..A....B....C.. & c.T..F..T. \\\\
+#' \\hline
+#' 1 &   1 & A & TRUE \\\\
+#' 2 &   2 & B & FALSE \\\\
+#' 3 &   3 & C & TRUE \\\\
+#' \\hline
+#' \\end{tabular}
+#' \\end{table}
 export_to_latex <-
 function(x){
   df <- as.data.frame(x)
