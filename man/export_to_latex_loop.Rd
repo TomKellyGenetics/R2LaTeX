@@ -13,15 +13,15 @@ export_to_latex_loop(object_list)
 Calls \code{\link[R2LaTeX]{export_to_latex}} for every objects given. Exports the R data object into a tex file with the same name as in the R working environment (into the current working directory). Automatically detects integers, strings, and numerics automatically formatting accordingly as string or numerical (with significant figures). Allows formatting of spaces in rownames.
 }
 \examples{
-data <- matrix(rnorm(500), 50, 10)
-rownames(data) <- 1:50
-colnames(data) <- letters[1:10]
+dataset <- matrix(rnorm(500), 50, 10)
+rownames(dataset) <- 1:50
+colnames(dataset) <- letters[1:10]
 
 table <- matrix(rnorm(1200), 60, 20)
 rownames(table) <- 1:60
 colnames(table) <- letters[1:20]
 
-objects <- c("data", "table")
+objects <- c("dataset", "table")
 
 export_to_latex_loop(objects)
 
