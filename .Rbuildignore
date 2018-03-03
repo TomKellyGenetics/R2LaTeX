@@ -2,4 +2,4 @@
 ^appveyor\.yml$
 data/example.tex
 data/example.RData 
-R2LaTeX.Rproj 
+^.Rproj$
